@@ -1,0 +1,49 @@
+Source: ispell.pt
+Section: text
+Priority: optional
+Maintainer: Agustin Martin Domingo <agmartin@debian.org>
+Build-Depends: ispell,
+	       aspell,
+	       debhelper,
+	       cdbs,
+	       dictionaries-common-dev,
+	       hunspell-tools
+Standards-Version: 4.6.0.1
+Rules-Requires-Root: no
+Homepage: https://natura.di.uminho.pt/wiki/doku.php?id=dicionarios:main#ispell
+Vcs-Git: https://salsa.debian.org/debian/ispell.pt.git
+Vcs-Browser: https://salsa.debian.org/debian/ispell.pt
+
+Package: iportuguese
+Architecture: all
+Depends: debconf | debconf-2.0,
+	 ${misc:Depends},
+	 ${ispell:Depends}
+Provides: ispell-dictionary
+Description: European Portuguese dictionary for ispell
+ This is the Portuguese dictionary for ispell currently developed by the
+ Informatics Department at Minho's University in Portugal.
+
+Package: wportuguese
+Architecture: all
+Multi-Arch: foreign
+Depends: debconf | debconf-2.0,
+ ${misc:Depends},
+ ${wordlist:Depends}
+Provides: wordlist
+Description: European Portuguese wordlist
+ This package provides the file /usr/share/dict/portuguese containing a
+ list of Portuguese words with European spellings. It was obtained
+ from the ispell.pt dictionary developed by the Informatics Department
+ at Minho's University in Portugal.
+
+Package: aspell-pt-pt
+Architecture: all
+Multi-Arch: foreign
+Provides: aspell-dictionary
+Depends: ${misc:Depends},
+         ${aspell:Depends}
+Breaks: aspell-pt-common (<< 1.0)
+Description: European Portuguese dictionary for GNU Aspell
+ This package contains all the required files to add support for the
+ European Portuguese language to the GNU Aspell spell checker.

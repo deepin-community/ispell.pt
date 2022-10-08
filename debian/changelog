@@ -1,0 +1,776 @@
+ispell.pt (20210922-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on debhelper and
+      dictionaries-common-dev.
+    + aspell-pt-pt: Drop versioned constraint on aspell-pt in Breaks.
+
+  [ Agustin Martin Domingo ]
+  * New upstream release.
+  * Bump Standards-Version.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Wed, 29 Sep 2021 00:29:23 +0200
+
+ispell.pt (20210625-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Thu, 15 Jul 2021 18:38:05 +0200
+
+ispell.pt (20210303-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Sun, 07 Mar 2021 20:54:16 +0100
+
+ispell.pt (20210301-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update iportuguese overrides and add new for aspell-pt-pt and source.
+  * debian/control: Update Standards-Version. No changes required.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Tue, 02 Mar 2021 16:02:30 +0100
+
+ispell.pt (20210112-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Tue, 12 Jan 2021 23:00:23 +0100
+
+ispell.pt (20201212-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/watch: Use secure URL for upstream location.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Sun, 20 Dec 2020 21:37:22 +0100
+
+ispell.pt (20201103-2) unstable; urgency=medium
+
+  * debian/copyright: Fix ordering of globbing patterns.
+  * debian/watch: Bump version to 4.
+  * Add Rules-Requires-Root: no in debian/control.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Thu, 26 Nov 2020 15:54:44 +0100
+
+ispell.pt (20201103-1) unstable; urgency=low
+
+  [ Debian Janitor ]
+  * debian/copyright: use spaces rather than tabs to start continuation lines.
+  * Fix day-of-week for changelog entry 20020903-1.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Agustin Martin Domingo ]
+  * New upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Fri, 13 Nov 2020 17:33:38 +0100
+
+ispell.pt (20190329-3) unstable; urgency=medium
+
+  * debian/rules: Fix broken aspell-pt-pt affix file build.
+  * Bump Standards-version. No changes required.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Thu, 31 Oct 2019 18:26:16 +0100
+
+ispell.pt (20190329-2) unstable; urgency=medium
+
+  * Bump Standards-version. No changes required.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Mon, 22 Jul 2019 17:01:42 +0200
+
+ispell.pt (20190329-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control: Bump Standards-Version
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Mon, 08 Jul 2019 11:50:46 +0200
+
+ispell.pt (20171225-3) unstable; urgency=medium
+
+  * debian/copyright: Fix syntax.
+  * debian/control:
+    - Declare wportuguese Multi-Arch: foreign.
+    - Bump Standards-Version. No changes required.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Thu, 22 Nov 2018 13:16:31 +0100
+
+ispell.pt (20171225-2) unstable; urgency=medium
+
+  * Bump debhelper compat level to 10. cdbs does not yet support level 11.
+  * Create a new aspell dictionary for European Portuguese. Thanks Paulo
+    Almeida for provided info (Closes: #891459).
+  * debian/control: Bump Standards-Version. No changes required.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Fri, 09 Mar 2018 11:59:48 +0100
+
+ispell.pt (20171225-1) unstable; urgency=medium
+
+  * New Upstream release.
+  * debian/control: Migrate git repo to salsa.debian.org.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Wed, 31 Jan 2018 19:38:48 +0100
+
+ispell.pt (20170814-2) unstable; urgency=medium
+
+  * debian/rules: Per users request, use UTF-8 Debian default encoding for
+    wportuguese.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Mon, 18 Sep 2017 12:12:49 +0200
+
+ispell.pt (20170814-1) unstable; urgency=medium
+
+  * New Upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Tue, 22 Aug 2017 13:21:15 +0200
+
+ispell.pt (20170615-1) unstable; urgency=medium
+
+  * New Upstream release.
+  * Bump Standards-Version. No changes required.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Mon, 19 Jun 2017 16:40:09 +0200
+
+ispell.pt (20161001-1) unstable; urgency=medium
+
+  * New Upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Tue, 18 Oct 2016 11:23:11 +0200
+
+ispell.pt (20160406-1) unstable; urgency=medium
+
+  * New Upstream release.
+  * debian/control:
+    - Upgrade Homepage field.
+    - Use encrypted transport protocol for Vcs-* fields.
+    - Bump Standards-version. No changes required.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Thu, 05 May 2016 13:05:02 +0200
+
+ispell.pt (20160108-1) unstable; urgency=medium
+
+  * New Upstream release.
+  * debian/copyright: Make DEP5 and upgrade copyright years and authors.
+  * Bump to debhelper compat level 9.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Wed, 13 Jan 2016 12:56:43 +0100
+
+ispell.pt (20160103-1) unstable; urgency=medium
+
+  * New Upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Fri, 08 Jan 2016 11:13:58 +0100
+
+ispell.pt (20151003-1) unstable; urgency=medium
+
+  * New Upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Wed, 14 Oct 2015 15:41:53 +0200
+
+ispell.pt (20150704-1) unstable; urgency=medium
+
+  * New Upstream release.
+  * debian/rules: Do not pass timestamps to gzipped files.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Mon, 13 Jul 2015 17:02:55 +0200
+
+ispell.pt (20150418-1) unstable; urgency=medium
+
+  * New Upstream release.
+  * Bump Standards-Version. No changes required.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Mon, 22 Jun 2015 14:54:32 +0200
+
+ispell.pt (20140704-1) unstable; urgency=low
+
+  * New Upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Thu, 24 Jul 2014 19:17:59 +0200
+
+ispell.pt (20140412-1) unstable; urgency=low
+
+  * New Upstream release.
+  * Rebuild against sid dictionaries-common-dev 1.23.2.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Wed, 23 Apr 2014 11:44:59 +0200
+
+ispell.pt (20140401-1) unstable; urgency=low
+
+  * New Upstream release.
+  * Rebuild against sid dictionaries-common-dev 1.23.0.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Wed, 09 Apr 2014 15:55:08 +0200
+
+ispell.pt (20140211-2~exp1) experimental; urgency=low
+
+  * Rebuild against experimental dictionaries-common-dev
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Thu, 06 Mar 2014 20:02:03 +0100
+
+ispell.pt (20140211-1) unstable; urgency=low
+
+  * New Upstream release.
+  * debian/control: Modify to use dictionaries-common-dev (>= 1.22.0) features:
+    - ${ispell:Depends}, ${wordlist:Depends}
+    - Deal with remove files in debhelper snippet.
+  * Add debian/source/format for 3.0 (quilt).
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Wed, 05 Mar 2014 18:54:08 +0100
+
+ispell.pt (20140102-1) unstable; urgency=low
+
+  * New Upstream release.
+  * Bump Standards-version. No changes required.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Tue, 14 Jan 2014 15:54:09 +0100
+
+ispell.pt (20130902-1) unstable; urgency=low
+
+  * New Upstream release.
+  * debian/control: Canonicalize VCS-* headers.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Mon, 16 Sep 2013 16:07:13 +0200
+
+ispell.pt (20130331-1) unstable; urgency=low
+
+  * New Upstream release.
+  * Bump Standards-version. No changes required.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Fri, 17 May 2013 18:01:18 +0200
+
+ispell.pt (20120604-1) unstable; urgency=low
+
+  * New Upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Mon, 18 Jun 2012 17:31:37 +0200
+
+ispell.pt (20120503-1) unstable; urgency=low
+
+  * New Upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Thu, 17 May 2012 11:32:18 +0200
+
+ispell.pt (20120312-1) unstable; urgency=low
+
+  * New Upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Thu, 03 May 2012 15:49:05 +0200
+
+ispell.pt (20120202-1) unstable; urgency=low
+
+  * New Upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Mon, 06 Feb 2012 18:56:06 +0100
+
+ispell.pt (20111126-1) unstable; urgency=low
+
+  * New Upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Mon, 28 Nov 2011 12:32:13 +0100
+
+ispell.pt (20110924-1) unstable; urgency=low
+
+  *  New Upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Mon, 26 Sep 2011 15:05:00 +0200
+
+ispell.pt (20110909-1) unstable; urgency=low
+
+  * New Upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Wed, 14 Sep 2011 16:21:22 +0200
+
+ispell.pt (20110823-1) unstable; urgency=low
+
+  * New Upstream release.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Wed, 31 Aug 2011 13:46:07 +0200
+
+ispell.pt (20110608-1) unstable; urgency=low
+
+  * New Upstream release.
+  * Bump Standards version. No changes required.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Wed, 08 Jun 2011 16:19:34 +0200
+
+ispell.pt (20110424-1) unstable; urgency=low
+
+  * New upstream version.
+  * Build-depend on at least dictionaries-common-dev 1.10.9 to
+    try new changes.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Tue, 03 May 2011 19:15:29 +0200
+
+ispell.pt (20110314-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Thu, 17 Mar 2011 13:02:45 +0100
+
+ispell.pt (20110313-1) unstable; urgency=low
+
+  * New upstream version.
+  * To have automatic /usr/lib/ispell/$hash->/var/lib/ispell/$hash
+    symlinks creation, make sure we build-depend on at least
+    dictionaries-common-dev 1.10.3. Remove that symlink from
+    iportuguese.links.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Tue, 15 Mar 2011 17:54:04 +0100
+
+ispell.pt (20110307-1) unstable; urgency=low
+
+  * New upstream version.
+  * Make sure we build-depend on at least just uploaded
+    dictionaries-common-dev 1.10.2 to get /var/lib/ispell
+    directory automatically created (Closes: #617341).
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Tue, 08 Mar 2011 11:24:37 +0100
+
+ispell.pt (20110301-1) unstable; urgency=low
+
+  * New upstream version.
+  * Use new dictionaries-common-dev 1.10 auto-compat capability.
+  * debian/control: Update dictionary Homepage.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Mon, 07 Mar 2011 11:46:49 +0100
+
+ispell.pt (20101214-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Thu, 16 Dec 2010 16:08:21 +0100
+
+ispell.pt (20101104-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Mon, 15 Nov 2010 18:16:17 +0100
+
+ispell.pt (20101031-1) unstable; urgency=low
+
+  * New upstream version.
+  * Bump Standards Version. No changes needed.
+  * Work around missing clean target in upstream makefile.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Tue, 02 Nov 2010 11:56:57 +0100
+
+ispell.pt (20091013-2) unstable; urgency=low
+
+  * Use ispell-autobuildhash. iportuguese is now an arch all package.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Fri, 08 Jan 2010 19:45:02 +0100
+
+ispell.pt (20091013-1) unstable; urgency=low
+
+  [ Rafael Laboissiere ]
+  * debian/control: The package is now maintained with Git at
+    alioth.debian.org.  Add Vcs-Git field and change Vcs-Browser
+    accordingly.
+
+  [ Agustin Martin Domingo ]
+  * New maintainer (Closes: #534356).
+  * New upstream release.
+  * debian/control: Bump Standards-Version to 3.8.3 (no changes needed)
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Tue, 22 Dec 2009 12:18:58 +0100
+
+ispell.pt (20090309-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control: Bump Standards-Version to 3.8.1 (no changes needed)
+
+ -- Rafael Laboissiere <rafael@debian.org>  Sat, 28 Mar 2009 19:15:27 +0100
+
+ispell.pt (20081113-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control: Fix Lintian warnings debhelper-but-no-misc-depends
+  * debian/iportuguese.lintian-overrides: Add Lintian overrides file for
+    overriding the warning extended-description-is-probably-too-short
+
+ -- Rafael Laboissiere <rafael@debian.org>  Sun, 15 Feb 2009 16:43:11 +0100
+
+ispell.pt (20080705-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/rules: Use debian/clean instead of manually cleaning files
+  * debian/compat, debian/control: Bump build-dependency on debhelper to
+    >= 7.0.0, otherwise debian/clean is moot
+  * debian/clean: New file
+
+ -- Rafael Laboissiere <rafael@debian.org>  Tue, 08 Jul 2008 21:57:38 +0200
+
+ispell.pt (20080610-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control: Bump Standards-Version to 3.8.0 (no changes needed)
+
+ -- Rafael Laboissiere <rafael@debian.org>  Sat, 21 Jun 2008 18:34:53 +0200
+
+ispell.pt (20080320-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control: Append trunk/ to the path in Vcs-Svn:, such that
+    debcheckout works
+  * debian/copyright: Add proper copyright notices, both upstream and for
+    the Debian packaging
+
+ -- Rafael Laboissiere <rafael@debian.org>  Thu, 27 Mar 2008 22:22:33 +0100
+
+ispell.pt (20071212-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control:
+    + Use the now official Vcs-* fields instead of the obsolete XS-Vcs-*
+    + Dropped the Homepage pseudo-header from the extended descriptions
+    + Bumped Standards-Version to 3.7.3
+
+ -- Rafael Laboissiere <rafael@debian.org>  Wed, 05 Dec 2007 13:20:36 +0100
+
+ispell.pt (20071003-2) unstable; urgency=low
+
+  * debian/control: Provides wordlist (closes: #446563)
+
+ -- Rafael Laboissiere <rafael@debian.org>  Sun, 14 Oct 2007 12:02:50 +0200
+
+ispell.pt (20071003-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control: Added Homepage field
+
+ -- Rafael Laboissiere <rafael@debian.org>  Wed, 10 Oct 2007 08:15:36 +0200
+
+ispell.pt (20070823-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Rafael Laboissiere <rafael@debian.org>  Thu, 30 Aug 2007 11:56:46 +0200
+
+ispell.pt (20070709-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Rafael Laboissiere <rafael@debian.org>  Mon, 23 Jul 2007 10:37:43 +0200
+
+ispell.pt (20070427-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Rafael Laboissiere <rafael@debian.org>  Fri,  4 May 2007 16:25:06 +0200
+
+ispell.pt (20070410-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control: Added XS-Vcs-Svn and XS-Vcs-Browser fields
+
+ -- Rafael Laboissiere <rafael@debian.org>  Sun, 22 Apr 2007 19:02:35 +0200
+
+ispell.pt (20070319-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control: Updated Homepage URL
+  * Bumped build-dependency on debhelper to >= 5
+
+ -- Rafael Laboissiere <rafael@debian.org>  Tue, 20 Mar 2007 16:08:35 +0100
+
+ispell.pt (20070201-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Rafael Laboissiere <rafael@debian.org>  Tue,  6 Feb 2007 21:22:43 +0100
+
+ispell.pt (20061226-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Rafael Laboissiere <rafael@debian.org>  Wed, 31 Jan 2007 11:47:26 +0100
+
+ispell.pt (20060914-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Rafael Laboissiere <rafael@debian.org>  Sat, 16 Sep 2006 12:39:18 +0200
+
+ispell.pt (20060831-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Rafael Laboissiere <rafael@debian.org>  Fri,  1 Sep 2006 11:07:21 +0200
+
+ispell.pt (20060808-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Rafael Laboissiere <rafael@debian.org>  Fri, 11 Aug 2006 22:36:30 +0200
+
+ispell.pt (20060705-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/rules: Include dictionaries-common's dict-common.mk makefile
+    scrap for automatic calling of installdeb-* scripts
+  * debian/control: Versioned build-dependency on dictionaries-common (>=
+    0.70) in order to the above inclusion to work
+  * debian/watch: Fixed URL such that download of upstream tarball works
+
+ -- Rafael Laboissiere <rafael@debian.org>  Wed,  5 Jul 2006 20:03:18 +0200
+
+ispell.pt (20060602-2) unstable; urgency=low
+
+  * New package wportuguese containing the wordlist (closes: #374788)
+  * debian/rules: Switched to CDBS
+
+ -- Rafael Laboissiere <rafael@debian.org>  Tue, 20 Jun 2006 13:20:15 +0200
+
+ispell.pt (20060602-1) unstable; urgency=low
+
+  * New upstream release.  The source package is renamed to ispell.pt, which
+    is the name used by the upstream authors.
+  * debian/control:
+    - Bumped Standards-Version to 3.7.2 (no changes needed)
+    - Depends on debconf | debconf-2.0, making it possible to use the
+      package with cdebconf (closes: #331863)
+    - Fixed spelling mistake in package description ("Departament" ->
+      "Department", closes: #363971)
+    - Updated homepage URL
+  * debian/rules, debian/compat: Upgraded debhelper compatibilty level from
+    3 to 4
+  * debian/watch: Added file
+
+ -- Rafael Laboissiere <rafael@debian.org>  Sat, 17 Jun 2006 00:54:59 +0200
+
+iportuguese (20020903-4) unstable; urgency=low
+
+  * New maintainer (actually, I am taking over the package from Marco
+    Ferra, who did not yet applied to become a debian maintainer).
+  * debian/control: Updated Depends and Build-Depends to the new version
+    of dictionaries-common (0.20.1) with a new scheme for debconf
+    (closes: #232162).
+  * debian/info-ispell: Use plain ascii in Language field.
+
+ -- Rafael Laboissiere <rafael@debian.org>  Wed, 11 Feb 2004 15:58:17 +0100
+
+iportuguese (20020903-3) unstable; urgency=low
+
+  * debian/control: Included the package's home page at the end of the
+    'Description' field, in conformance with section 6.2.4 of the
+    Debian Developer's Reference manual.
+
+ -- Marco Ferra <hash@netvisao.pt>  Sun,  7 Sep 2003 12:13:20 +0100
+
+iportuguese (20020903-2) unstable; urgency=low
+
+  * debian/info-ispell:
+    - Changed Coding-System to iso-8859-1, such that ispell.el will stop
+      complaining (closes: #208518).
+    - Changed "português de portugal" to "portuguê europeu" for the sake
+      of coherence.
+  * debian/rules: Uncommented dh_installdeb in the binary-arch target.  This
+    was preventing the postinst, prerm, and postrm scripts of being
+    installed in the package (closes: #208641).
+
+ -- Marco Ferra <hash@netvisao.pt>  Thu,  4 Sep 2003 14:24:26 +0100
+
+iportuguese (20020903-1) unstable; urgency=low
+
+  * New upstream release.
+  * New maintainer.  Added old maintainer, Rafael Laboissiere
+    <rafael@debian.org>, as an Uploader in debian/control.
+
+ -- Marco Ferra <hash@netvisao.pt>  Mon, 25 Aug 2003 21:21:36 +0100
+
+iportuguese (19980611-10.1) unstable; urgency=low
+
+  * Non-Maintainer Upload with maintainer agreement.
+  * New policy package (closes: #164252, #71902, #66622)
+  * debian/control:
+    - Word 'Portuguese' capitalized (closes: #124761).
+    - Last minute policy change: changed dictionaries-common
+      dependency from 'Pre-Depends:' to a simple 'Depends'.
+
+ -- Agustin Martin Domingo <agmartin@debian.org>  Tue, 22 Oct 2002 16:30:25 +0200
+
+iportuguese (19980611-10) unstable; urgency=low
+
+  * debian/info-ispell: Added Locale entry.
+
+ -- Rafael Laboissiere <rafael@debian.org>  Sun, 16 Jun 2002 16:35:06 +0200
+
+iportuguese (19980611-9) unstable; urgency=low
+
+  * debian/info-ispell: Added Pspell-Ispell field.
+
+ -- Rafael Laboissiere <rafael@debian.org>  Tue, 11 Jun 2002 17:02:25 +0200
+
+iportuguese (19980611-8) unstable; urgency=low
+
+  * debian/emacsen-startup: Removed this obsolete file.  It is not needed
+    with the New design of the dictionaries-common package.
+
+ -- Rafael Laboissiere <rafael@debian.org>  Mon, 25 Feb 2002 16:52:47 +0100
+
+iportuguese (19980611-7) unstable; urgency=low
+
+  * Rebuilding against ispell 3.1.20-30. Will now use MAXSTRINGCHARS=128
+
+ -- Rafael Laboissiere <rafael@debian.org>  Mon, 25 Feb 2002 15:21:36 +0100
+
+iportuguese (19980611-6) unstable; urgency=low
+
+  * Regenerated to get the fixed postrm script from dictionaries-common
+    release 0.4.99.6.
+
+ -- Rafael Laboissiere <rafael@debian.org>  Wed, 28 Nov 2001 20:13:56 +0100
+
+iportuguese (19980611-5) unstable; urgency=low
+
+  * debian/info-ispell: Corrected fileds for compliance with new
+    dictionaries-common Policy.
+
+ -- Rafael Laboissiere <rafael@debian.org>  Tue, 27 Nov 2001 12:58:55 +0100
+
+iportuguese (19980611-4) unstable; urgency=low
+
+  * Recompiled to get new prerm from dictionaries-common.
+
+ -- Rafael Laboissiere <rafael@debian.org>  Mon, 26 Nov 2001 22:47:24 +0100
+
+iportuguese (19980611-3) unstable; urgency=low
+
+  * Reverted the name of the package to the traditional Debian style.  The
+    idict-* naming is no more necessary for compliance with the new Debian
+    Spelling Dictonaries and Tools Policy.
+
+ -- Rafael Laboissiere <rafael@debian.org>  Thu, 22 Nov 2001 23:36:11 +0100
+
+idict-portuguese-european (19980611-6) unstable; urgency=low
+
+  * Updated for version 0.4.9 of dictionaries-common, with the new design
+    schema where ispell languages info are in debian/ispell-info.
+
+ -- Rafael Laboissiere <rafael@debian.org>  Sun, 18 Nov 2001 16:52:47 +0100
+
+idict-portuguese-european (19980611-5) unstable; urgency=low
+
+  * Updated for version 0.4.3 of dictionaries-common.
+  * debian/control: Upgraded Standards-Version to 3.5.6.  Added
+    Build-Depends.  Changed e-mail address of the maintainer.  Added
+    debconf and ispell to Depends list.
+  * debian/rules: Removed call to deprecated dh_testversion.  Remove
+    dictionaries-common generated files (templates and config) in "clean"
+    rule.
+  * debian/jed-startup: Added file.
+
+ -- Rafael Laboissiere <rafael@debian.org>  Mon, 12 Nov 2001 00:20:43 +0100
+
+idict-portuguese-european (19980611-4) unstable; urgency=low
+
+  * debian/rules: Use idict_debinst instead of dh_idict.
+
+ -- Rafael Laboissiere <rafael@icp.inpg.fr>  Wed,  3 Nov 1999 10:57:17 +0100
+
+idict-portuguese-european (19980611-3) unstable; urgency=low
+
+  * debian/emacsen-startup: Added colon in local variables entry.
+
+ -- Rafael Laboissiere <rafael@icp.inpg.fr>  Tue,  2 Nov 1999 16:08:07 +0100
+
+idict-portuguese-european (19980611-2) unstable; urgency=low
+
+  * Removed zombi files with "ispell-dic" prefix in debian/ directory.
+
+ -- Rafael Laboissiere <rafael@icp.inpg.fr>  Tue,  2 Nov 1999 09:16:34 +0100
+
+idict-portuguese-european (19980611-1) unstable; urgency=low
+
+  * Changed name again for Spelling Policy compliance.
+  * Call dh_idict in debian/rules for automatic generation of debconf
+    config and templates files.
+
+ -- Rafael Laboissiere <rafael@icp.inpg.fr>  Mon,  1 Nov 1999 02:50:26 +0100
+
+ispell-dic-portuguese-european (19980611-1) unstable; urgency=low
+
+  * Changed name for Spelling Policy compliance.
+  * Corrected debian/emacsen-startup to reflect the new API changes.
+
+ -- Rafael Laboissiere <rafael@icp.inpg.fr>  Fri, 22 Oct 1999 11:29:40 +0200
+
+ispell-dic-portuguese (19980611-2) unstable; urgency=low
+
+  * New debian/config (Policy compliant).
+
+ -- Rafael Laboissiere <rafael@icp.inpg.fr>  Wed, 20 Oct 1999 11:19:55 +0200
+
+ispell-dic-portuguese (19980611-1) unstable; urgency=low
+
+  * Changed package name to comply with the new Debian spelling Dictionary
+    Tools Policy.
+  * Included files debian/templates and debian/config (for debconf).
+  * FHS compliant.
+  * Upgrade to Standards-Version 3.0.1.
+  * Added Priority field to in debian/control.
+
+ -- Rafael Laboissiere <rafael@icp.inpg.fr>  Tue, 19 Oct 1999 11:14:23 +0200
+
+iportuguese (19980611-1) unstable; urgency=low
+
+  * New upstream version.
+  * Made /etc/emacs/site-start.d/50iportuguese.el a conffile.
+  * Upgraded to Standards-Version 2.5.0.
+  * Fixed author order in debian/control.
+  * Removed debian/files.
+  * Now using dh_installemacsen in debian/rules:
+    debian/iportuguese-startup.el was renamed to
+    iportuguese.emacsen-startup.
+  * Minor cleanups in debian/rules.
+  * Revamped postinst preinst prerm scripts (they should be more robust now).
+
+ -- Rafael Laboissiere <rafael@icp.inpg.fr>  Fri,  4 Jun 1999 13:12:23 +0200
+
+iportuguese (19950819-6) unstable; urgency=low
+
+  * Exchange binary-indep and binary-arch targets in debian/rules. The only
+    one generated package is arch-dependent. (This was suggested by Roman
+    Hodek <Roman.Hodek@informatik.uni-erlangen.de> to fix Bug#25415 of the
+    ibrazilian package.)
+
+ -- Rafael Laboissiere <rafael@icp.inpg.fr>  Tue, 13 Oct 1998 20:58:51 +0200
+
+iportuguese (19950819-5) unstable; urgency=low
+
+  * Using English name `portuguese' instead of native name `portugues' for
+    update-alternatives.
+  * Added preinst script to clean up portugues.* alternatives
+
+ -- Rafael Laboissiere <rafael@icp.inpg.fr>  Sun, 21 Jun 1998 01:21:37 +0200
+
+iportuguese (19950819-4) unstable; urgency=low
+
+  * Added postinst and prerm scripts stolen from iamerican (now runs
+    update-ispell-dictionary at installation)
+
+ -- Rafael Laboissiere <rafael@icp.inpg.fr>  Fri, 19 Jun 1998 12:03:42 +0200
+
+iportuguese (19950819-3) unstable; urgency=low
+
+  * Changed section from non-free to main.  (I got authorization from the
+    author to put the package under GPL and mistakenly kept it in
+    non-free.)
+
+ -- Rafael Laboissiere <rafael@icp.inpg.fr>  Wed, 17 Jun 1998 16:31:26 +0200
+
+iportuguese (19950819-2) unstable; urgency=low
+
+  * Moved iportuguese-startup.el to debian/ directory (for consistency with
+    the ibrazilian package).
+  * Changed architecture from `all' to `any'.  The hash file is
+    endian-dependent (as reported by Duncan Thomson
+    <duncan@medc1.paisley.ac.uk>).
+
+
+ -- Rafael Laboissiere <rafael@icp.inpg.fr>  Tue, 16 Jun 1998 18:22:44 +0200
+
+iportuguese (19950819-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Rafael Laboissiere <rafael@icp.inpg.fr>  Mon,  8 Jun 1998 18:38:16 +0200

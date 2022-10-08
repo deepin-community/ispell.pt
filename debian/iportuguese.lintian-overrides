@@ -1,0 +1,5 @@
+# There is not really too much to tell about this package, hence the
+# short extended descripition
+iportuguese: extended-description-is-probably-too-short
+iportuguese: national-encoding usr/lib/ispell/portugues.aff
+iportuguese: national-encoding var/lib/dictionaries-common/ispell/iportuguese

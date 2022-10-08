@@ -1,0 +1,4 @@
+ispell.pt source: national-encoding debian/aspell-files/pt_PT.header
+ispell.pt source: national-encoding debian/aspell-files/pt_PT_repl.dat
+ispell.pt source: national-encoding debian/aspell-pt-pt.info-aspell
+ispell.pt source: national-encoding debian/iportuguese.info-ispell

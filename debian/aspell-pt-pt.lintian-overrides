@@ -1,0 +1,4 @@
+aspell-pt-pt: national-encoding usr/lib/aspell/pt_PT_affix.dat
+aspell-pt-pt: national-encoding usr/lib/aspell/pt_PT_repl.dat
+aspell-pt-pt: national-encoding var/lib/dictionaries-common/aspell/aspell-pt-pt
+aspell-pt-pt: wrong-section-according-to-package-name aspell-pt-pt => localization

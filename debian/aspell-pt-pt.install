@@ -1,0 +1,4 @@
+debian/aspell-files/*.multi 		usr/lib/aspell
+debian/aspell-files/*.dat 		usr/lib/aspell
+debian/aspell-files/*.alias		usr/lib/aspell
+debian/aspell-files/pt_PT.cwl.gz	usr/share/aspell

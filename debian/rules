@@ -1,0 +1,28 @@
+#!/usr/bin/make -f
+
+# debian/rules for package ispell.pt
+# Copyright 2006 Rafael Laboissiere
+#
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/dictionaries-common/cdbs/dict-common.mk
+
+build/iportuguese::
+	$(MAKE) portugues.hash
+	mkdir -p debian/ispell-auto
+	gzip -nc --best portugues.dic > debian/ispell-auto/portugues.mwl.gz
+
+build/wportuguese:: build/iportuguese
+	ispell -e -d ./portugues.hash < portugues.dic \
+		| perl -pe 's/ +/\n/g' | iconv -f ISO-8859-1 -t UTF-8 > portuguese
+
+build/aspell-pt-pt::
+	cat portugues.dic | prezip -s -c | gzip -9n -c > debian/aspell-files/pt_PT.cwl.gz
+	ispellaff2myspell --charset=latin1 \
+                --myheader=debian/aspell-files/pt_PT.header portugues.aff \
+		> debian/aspell-files/pt_PT_affix.dat
+
+clean::
+        # Do not call missing upstream clean target.
+	rm -f portugues.hash debian/aspell-files/pt_PT_affix.dat debian/aspell-files/pt_PT.cwl.gz
+	rm -rf debian/ispell-auto

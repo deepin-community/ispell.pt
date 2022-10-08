@@ -1,0 +1,12 @@
+Language: portugues europeu (European Portuguese)
+Hash-Name: portugues
+Emacsen-Name: portugues
+Casechars: [a-záéíóúàèìòùãõçâêôA-ZÁÉÍÓÚÀÈÌÒÙÃÕÇÂÊÔ]
+Not-Casechars: [^a-záéíóúàèìòùãõçâêôA-ZÁÉÍÓÚÀÈÌÒÙÃÕÇÂÊÔ]
+Otherchars: [']
+Many-Otherchars: no
+Auto-Compat: portugues
+Additionalchars: áéíóúàèìòùãõçâêôÁÉÍÓÚÀÈÌÒÙÃÕÇÂÊÔ
+Ispell-Args: -B -d portugues
+Extended-Character-Mode:
+Coding-System: iso-8859-1
